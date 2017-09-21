@@ -9,7 +9,7 @@ Ansible role to manage ssh configs.
 # Sections and key-value pairs to include in the users .ssh-config
 ssh_config:
   # Destination of the config file
-  destination: "{{ ansible_env.HOME + '/.ssh_config' }}"
+  destination: "{{ ansible_env.HOME + '/.ssh/config' }}"
 
   # Sections and key-value pairs to include in the users .gitconfig
   config:
