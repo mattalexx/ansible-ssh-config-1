@@ -1,0 +1,6 @@
+---
+- name: Configure the users ssh config file
+  template:
+    src: "config.j2"
+    dest: "{{ ssh_config.destination }}"
+  when: ssh_config.config

@@ -1,0 +1,11 @@
+# {{ ansible_managed }}
+{%   for (key,value) in ssh_config.config.items()|dictsort %}
+{%     if key|lower == "host" %}
+
+Host {{ value }}
+{%     endif %}
+{%     if key|lower != "host" %}
+  {{ key }} {{ value }}
+{%     endif %}
+{%   endfor %}
+# END ANSIBLE MANAGED BLOCK

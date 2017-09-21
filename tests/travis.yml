@@ -1,0 +1,10 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  vars:
+    ssh_config:
+      config:
+        - { Host: "localhost 127.0.0.1", Hostname: "127.0.0.1", User: "root" }
+        - { Host: "localhost 127.0.0.2", Hostname: "127.0.0.2", User: "admin" }
+  roles:
+    - { role: ansible-ssh-config }

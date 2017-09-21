@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Kevin Wennemuth
+  description: Ansible role to manage ssh configs.
+  license: MIT
+  min_ansible_version: 2.3
+  platforms:
+  - name: Darwin
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  galaxy_tags:
+    - system
+    - osx
+    - macos
+    - linux
+    - ssh
+    - config
+dependencies: []
