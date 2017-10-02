@@ -1,7 +1,15 @@
 ---
 ssh_config:
-  # Destination of the config file
-  destination: "{{ ansible_env.HOME + '/.ssh/config' }}"
+  # Destination directory of the config file
+  destination: "{{ ansible_env.HOME + '/.ssh' }}"
 
   # Sections and key-value pairs to include in the users .gitconfig
   config: []
+
+secrets:
+  ssh:
+    # Private ssh key, multiline terminated with \n
+    private: ""
+
+    # Public ssh key, multiline terminated with \n
+    public: ""
