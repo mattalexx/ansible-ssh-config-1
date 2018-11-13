@@ -16,8 +16,6 @@ galaxy_info:
     - all
   galaxy_tags:
     - system
-    - osx
-    - macos
     - linux
     - ssh
     - config

@@ -1,15 +1,14 @@
 ---
-ssh_config:
+ansible_ssh_config: {
+  # The owner of the keys
+  owner: {
+    name: "feffi",
+    group: "feffi"
+  },
   # Destination directory of the config file
-  destination: "{{ ansible_env.HOME + '/.ssh' }}"
-
+  destination: "",
+  # SSH key pairs to publish
+  sshkeys: [],
   # Sections and key-value pairs to include in the users .gitconfig
   config: []
-
-secrets:
-  ssh:
-    # Private ssh key, multiline terminated with \n
-    private: ""
-
-    # Public ssh key, multiline terminated with \n
-    public: ""
+}

@@ -1,5 +1,5 @@
-{% for host in ssh_config.config %}
-{%   for key, value in host.iteritems() %}
+{% for host in ansible_ssh_config.config %}
+{%   for key, value in host.items() %}
 {%     if key|lower == "host" %}
 
 Host {{ value|e }}
